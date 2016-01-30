@@ -7,7 +7,7 @@
 
         <properties>
 
-            <!--****************** H2 ****************** -->
+            <!--****************** H2 banco de dados ****************** -->
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
             <property name="javax.persistence.jdbc.url"
                       value="jdbc:h2:file:~/uniPHdb;DB_CLOSE_DELAY=-1;MVCC=TRUE;AUTO_SERVER=TRUE"/>

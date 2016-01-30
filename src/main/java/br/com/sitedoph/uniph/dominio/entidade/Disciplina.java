@@ -4,7 +4,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
@@ -19,8 +21,7 @@ public class Disciplina {
 	@Column (name = "DESCRICAO")
 	private String descricao;
 	
-	@ManyToOne //tipo de relacionamento 1 pra muito da entidade professor
-	@Column (name = "PROFESSOR")
+	@ManyToOne//tipo de relacionamento 1 pra muito da entidade professor
 	private Professor professor;
 	
 	@Column (name = "CARGAHORARIA")
